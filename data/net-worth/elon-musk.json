@@ -25,5 +25,19 @@
         "note": "Illustrative later snapshot"
       }
     ]
+  },
+  {
+    "id": "elon-musk-nw-2026-03",
+    "personId": "elon-musk",
+    "asOf": "2026-03-01",
+    "netWorthUsd": 839000000000,
+    "rank": 1,
+    "sources": [
+      {
+        "source": "forbes",
+        "url": "https://www.forbes.com/billionaires/",
+        "note": "World's Billionaires 2026; stock prices/FX as of 2026-03-01"
+      }
+    ]
   }
 ]
