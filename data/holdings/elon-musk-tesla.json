@@ -1,0 +1,15 @@
+{
+  "id": "elon-musk-tesla-stake",
+  "personId": "elon-musk",
+  "organizationId": "tesla",
+  "stakeType": "significant",
+  "ownershipPercent": 13,
+  "role": "ceo",
+  "asOf": "2024-01-01",
+  "sources": [
+    {
+      "source": "sec",
+      "note": "Illustrative ownership percent for sample data"
+    }
+  ]
+}

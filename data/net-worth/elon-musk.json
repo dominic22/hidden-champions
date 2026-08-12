@@ -1,0 +1,29 @@
+[
+  {
+    "id": "elon-musk-nw-2024-04",
+    "personId": "elon-musk",
+    "asOf": "2024-04-01",
+    "netWorthUsd": 180000000000,
+    "rank": 1,
+    "sources": [
+      {
+        "source": "forbes",
+        "url": "https://www.forbes.com/profile/elon-musk/",
+        "note": "Illustrative snapshot for schema sample"
+      }
+    ]
+  },
+  {
+    "id": "elon-musk-nw-2025-01",
+    "personId": "elon-musk",
+    "asOf": "2025-01-15",
+    "netWorthUsd": 420000000000,
+    "rank": 1,
+    "sources": [
+      {
+        "source": "forbes",
+        "note": "Illustrative later snapshot"
+      }
+    ]
+  }
+]

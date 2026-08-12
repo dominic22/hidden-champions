@@ -1,0 +1,15 @@
+{
+  "id": "spacex",
+  "name": "Space Exploration Technologies Corp.",
+  "type": "space",
+  "hqCountry": "US",
+  "taxDomicile": "US",
+  "website": "https://www.spacex.com",
+  "summary": "Private space launch and spacecraft company.",
+  "sources": [
+    {
+      "source": "manual",
+      "note": "Sample organization record"
+    }
+  ]
+}

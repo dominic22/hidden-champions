@@ -1,0 +1,52 @@
+[
+  {
+    "id": "elon-musk-bel-air",
+    "ownerPersonId": "elon-musk",
+    "category": "primary_residence",
+    "name": "Bel Air compound",
+    "location": {
+      "city": "Los Angeles",
+      "region": "California",
+      "country": "US"
+    },
+    "notes": "Illustrative sample residence record.",
+    "sources": [
+      {
+        "source": "manual",
+        "note": "Sample data for schema validation"
+      }
+    ]
+  },
+  {
+    "id": "elon-musk-gulfstream",
+    "ownerPersonId": "elon-musk",
+    "category": "private_jet",
+    "name": "Gulfstream G650ER",
+    "details": {
+      "aircraftType": "Gulfstream G650ER",
+      "tailNumber": "N628TS"
+    },
+    "sources": [
+      {
+        "source": "manual",
+        "note": "Sample aircraft record"
+      }
+    ]
+  },
+  {
+    "id": "elon-musk-model-s",
+    "ownerPersonId": "elon-musk",
+    "category": "vehicle",
+    "name": "Tesla Model S",
+    "details": {
+      "make": "Tesla",
+      "model": "Model S"
+    },
+    "sources": [
+      {
+        "source": "manual",
+        "note": "Sample vehicle record"
+      }
+    ]
+  }
+]

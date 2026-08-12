@@ -1,0 +1,20 @@
+{
+  "id": "elon-musk-tesla-board",
+  "type": "board",
+  "from": {
+    "kind": "person",
+    "id": "elon-musk"
+  },
+  "to": {
+    "kind": "organization",
+    "id": "tesla"
+  },
+  "since": "2004",
+  "notes": "Board / leadership relationship sample.",
+  "sources": [
+    {
+      "source": "manual",
+      "note": "Sample relationship edge"
+    }
+  ]
+}

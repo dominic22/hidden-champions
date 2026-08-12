@@ -1,0 +1,15 @@
+{
+  "id": "tesla",
+  "name": "Tesla, Inc.",
+  "type": "company",
+  "hqCountry": "US",
+  "taxDomicile": "US",
+  "website": "https://www.tesla.com",
+  "summary": "Electric vehicles and energy company.",
+  "sources": [
+    {
+      "source": "sec",
+      "note": "Public company filings"
+    }
+  ]
+}

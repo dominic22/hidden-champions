@@ -1,0 +1,18 @@
+{
+  "name": "hidden-champions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "tsx scripts/validate-data.ts",
+    "query": "tsx scripts/query-data.ts",
+    "search-people": "tsx scripts/query-data.ts --search",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "zod": "^3.24.2"
+  }
+}

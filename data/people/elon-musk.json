@@ -1,0 +1,27 @@
+{
+  "id": "elon-musk",
+  "name": {
+    "full": "Elon Musk",
+    "given": "Elon",
+    "family": "Musk"
+  },
+  "status": "living",
+  "birth": {
+    "date": "1971-06-28",
+    "precision": "day"
+  },
+  "citizenship": ["US", "ZA", "CA"],
+  "residenceCountries": ["US"],
+  "primaryWealthSource": "tech",
+  "summary": "Entrepreneur associated with Tesla, SpaceX, and related ventures.",
+  "aliases": ["Elon Reeve Musk"],
+  "sources": [
+    {
+      "source": "forbes",
+      "url": "https://www.forbes.com/profile/elon-musk/",
+      "note": "Profile identity and wealth source"
+    }
+  ],
+  "createdAt": "2026-08-12T08:00:00.000Z",
+  "updatedAt": "2026-08-12T08:00:00.000Z"
+}

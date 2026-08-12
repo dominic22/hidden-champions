@@ -1,0 +1,13 @@
+{
+  "id": "elon-musk-spacex-stake",
+  "personId": "elon-musk",
+  "organizationId": "spacex",
+  "stakeType": "controlling",
+  "role": "founder",
+  "sources": [
+    {
+      "source": "manual",
+      "note": "Sample controlling stake"
+    }
+  ]
+}
