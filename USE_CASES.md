@@ -1,90 +1,43 @@
 # Related use cases
 
-Ideas for other curated datasets in the same spirit as hidden champions: topics people care about, but that aren’t as easy as looking up a single Forbes-style list. The value is stitching people, assets, organizations, and influence from scattered public sources.
+Ideas for other curated datasets in the same spirit as hidden champions: topics people care about, but that aren’t as easy as looking up a single public ranking. The value is stitching people, organizations, ownership, and influence from scattered sources — power and control, not lifestyle.
 
 ## Summary
 
-- **Ultra-private assets** — Map yachts, jets, homes, and teams back to owners.
-- **Dynastic wealth** — Track clans, heirs, and marriages as the unit.
-- **Mobile UHNW lifestyle** — Link multi-country homes, jets, and yachts as one system.
 - **Media & narrative control** — Show who funds the outlets that set the story.
 - **Shadow influencers** — Name the kingmakers behind elected and CEO faces.
-- **Philanthropy as soft power** — Follow foundation money into access and influence.
-- **Corporate control chains** — Peel trusts and shells to real controllers.
-- **Private capital operators** — Map PE and family-office owners of the real economy.
-- **Cross-border tax geography** — Chart citizenship, HQ, and tax domicile splits.
+- **Who owns what you use** — Trace everyday brands and platforms to real controllers.
+- **Power dynasties** — Track political, business, and entertainment families as networks.
+- **Cultural franchise ownership** — Map teams, leagues, and landmark venues to owners.
+- **Institutional funding** — Follow foundation and donor money into access and agendas.
+- **Corporate control chains** — Peel trusts and shells to beneficial controllers.
+- **Private capital operators** — Map PE and family-office owners behind ordinary firms.
+- **HQ vs. tax geography** — Chart where companies sit versus where they are taxed.
 
 ## Why this order
 
-Instagram luxury discourse skews to what you can see and envy: private jets, superyachts, mansions, cars, and “who owns this?” posts, plus heirs and dynasty faces. Media ownership and named kingmakers still travel when dramatized; PE structures, control chains, Form 990 maps, and tax domicile charts mostly don’t.
+Social feeds reward drama and recognition more than balance sheets: who runs the news, who pulls strings, who owns the brand or team you already care about, whose family keeps showing up in politics or entertainment. Abstract finance (shells, LP lists, tax domiciles) still matters for the join — it just doesn’t lead on curiosity alone.
 
 ## Pattern (what “hidden champions–shaped” means)
 
 Good signals:
 
 - No single canonical roster
-- Value is in joins (people ↔ assets ↔ orgs)
+- Value is in joins (people ↔ orgs ↔ ownership ↔ influence)
 - Public-but-scattered sources
 - Network / graph is the payoff
 
 Weak signals:
 
-- One Wikipedia or Forbes page is enough
-- Pure rankings
+- One Wikipedia or ranking page is enough
+- Pure leaderboards
 - Purely private / unverifiable data
 - Flat directory with no relationships
+- Lifestyle or envy as the main hook
 
 ---
 
 ## Use cases by interest
-
-### Ultra-private assets
-
-Start from the asset (superyachts, private jets, islands, sports teams, mansions), map back to beneficial owners. Inverts the current person → assets direction.
-
-**For**
-
-- Strongest Instagram visual hook (`#privatejet`, `#superyacht`, `#luxuryhomes`, etc.)
-- “Who owns this?” is shareable and curiosity-driven
-- Clear product angle that still needs hard ownership joins
-
-**Against**
-
-- Beneficial ownership is often opaque or wrong in public chatter
-- Thin on relationship networks compared to person-first graphs
-- Overlaps assets already planned under each billionaire profile
-
-### Dynastic wealth
-
-Track clans (e.g. Wertheimer, Walton, Albrecht, Ambani) as the unit: who controls what, succession, marriages, holding companies, citizenship splits. Forbes lists individuals; the structure is the story.
-
-**For**
-
-- Heirs / “nepo” / aristo-influencer content already performs on IG and TikTok
-- Family graph is sticky and story-rich
-- Best reuse of the current person / org / relationship schema
-
-**Against**
-
-- Clan boundaries are fuzzy (who’s in, who’s out)
-- Privacy and sensitivity around living family members
-- Less pure “object porn” than asset-first feeds
-
-### Mobile UHNW lifestyle
-
-Treat multi-country homes, private aviation, and yachts as one mobility system — floating HQs and on-demand movement — rather than isolated trophies.
-
-**For**
-
-- Matches current Instagram luxury narrative (live everywhere, not own more)
-- Natural join of assets + geography people already care about
-- Easy to illustrate with travel and lifestyle media
-
-**Against**
-
-- Vague as a standalone entity model
-- Hard to scope vs. ultra-private assets and geography enrichment already planned
-- Risk of becoming lifestyle content without a crisp roster
 
 ### Media & narrative control
 
@@ -94,97 +47,145 @@ Not “top newspapers,” but who funds or owns the outlets, podcasts, newslette
 
 - High drama when tied to named, recognizable outlets
 - Strong joins across donations, boards, and ownership
-- Complements the planned media & influence layer
+- Broad public interest beyond any wealth list
 
 **Against**
 
 - Attribution fights and contested claims
-- Slower / denser than lifestyle asset content on Instagram
+- Dense compared with simple personality content
 - Legal and reputational risk if ownership framing is sloppy
 
 ### Shadow influencers
 
-People who shape markets and policy without being elected or a household-name CEO: board chairs, family-office principals, lobbyists, think-tank funders, “kingmakers.”
+People who shape markets and policy without being elected or a household-name CEO: advisors, lobbyists, board chairs, funders, “kingmakers.”
 
 **For**
 
 - True “hidden” roster — closest to the product name’s promise
-- Long-run differentiation after the billionaire list feels “done”
+- Long-run differentiation after any celebrity list feels done
 - Enrichment path matches donations, boards, co-investments, media
 
 **Against**
 
-- Weak Instagram surface unless a specific name goes viral
+- Weak feed surface unless a specific name goes viral
 - Inclusion criteria are hard to define and defend
-- Public sources are sparse compared with famous billionaires
+- Public sources are sparse compared with famous figures
 
-### Philanthropy as soft power
+### Who owns what you use
 
-Foundations as influence machines: where money goes, which causes, which politicians and universities get access. Sources: OpenSecrets, Form 990, foundation reports.
+Start from familiar brands, apps, and employers; map back through holding companies to controllers. Same “asset → owner” invert, aimed at daily life instead of trophies.
 
 **For**
 
-- Real, structured public data (990s, donation filings)
-- Influence angle is distinct from net-worth lists
-- Ties naturally into politics and institutions
+- Instant recognition (“who owns my supermarket / social app / airline?”)
+- Shareable without requiring luxury interest
+- Forces the hard ownership joins the project is good at
 
 **Against**
 
-- Dry for Instagram compared with jets and yachts
-- “Charity washing” framing is contentious
+- Ownership changes often; data goes stale
+- Easy to oversimplify complex minority stakes
+- Overlaps corporate control chains unless scoped carefully
+
+### Power dynasties
+
+Track families as the unit across politics, business, and entertainment: succession, marriages, shared vehicles, recurring names in power — structure over individual fame.
+
+**For**
+
+- Dynasty / “nepo” discourse already travels hard on social media
+- Family graph is sticky and story-rich
+- Strong reuse of person / org / relationship schemas
+
+**Against**
+
+- Clan boundaries are fuzzy (who’s in, who’s out)
+- Privacy and sensitivity around living family members
+- Easy to slip back into gossip without the control graph
+
+### Cultural franchise ownership
+
+Sports teams, leagues, major venues, festivals, and similar public-facing franchises — start from the thing fans already follow, then map beneficial owners and related boards.
+
+**For**
+
+- Built-in audiences who already argue about owners
+- Visual and narrative without being a wealth magazine
+- Natural person ↔ org ↔ asset joins
+
+**Against**
+
+- Narrower domain than “all companies”
+- League and deal data can be incomplete or delayed
+- Fan discourse can drown out careful sourcing
+
+### Institutional funding
+
+Foundations, major donors, and grant networks as influence: where money goes, which causes and universities get access. Sources: OpenSecrets, Form 990, foundation reports.
+
+**For**
+
+- Real, structured public data
+- Influence angle distinct from personality rankings
+- Ties into politics, academia, and NGOs people already debate
+
+**Against**
+
+- Drier feed surface than named drama
 - Easy to overclaim intent from grant lists alone
+- Contentious framing if treated as gotcha journalism
 
 ### Corporate control chains
 
-Who really owns or controls major companies through layers of trusts, foundations, and shell entities. Sources: SEC filings, corporate registries, leak data.
+Who really controls major companies through layers of trusts, foundations, and shell entities. Sources: SEC filings, corporate registries, leak data.
 
 **For**
 
 - High investigative and differentiation value
 - Leak + registry joins are exactly the “hard to assemble” bet
-- Answers a question people ask but lists don’t
+- Answers a question people ask but simple lists don’t
 
 **Against**
 
-- Specialist audience; weak casual feed appeal
-- Dense UX and explanation burden
+- Specialist audience; explanation-heavy
+- Dense UX
 - Maintenance-heavy as structures change
 
 ### Private capital operators
 
-PE/VC partners and family offices that own large chunks of the real economy but aren’t always “billionaires” on a public list. Portfolio companies, LP networks, club deals, political ties.
+PE/VC partners and similar operators behind large parts of ordinary business — portfolio companies, deal networks, political ties — whether or not they are household names.
 
 **For**
 
-- Under-covered vs. Forbes-style fame
-- Owns much of everyday business people actually touch
-- Network of deals and LPs can be graph-native
+- Under-covered vs. celebrity rankings
+- Touches employers and brands people actually know
+- Network of deals can be graph-native
 
 **Against**
 
 - Low name recognition for most operators
 - LP and deal data is often private or delayed
-- Weak Instagram feed appeal without a celebrity hook
+- Weak casual feed appeal without a familiar brand hook
 
-### Cross-border tax geography
+### HQ vs. tax geography
 
-Citizenship, residence, HQ vs. tax domicile vs. asset location — more map product than person list. Complements the existing geography & power layer.
+Where organizations are headquartered, staffed, and taxed — map product more than person list. Complements ownership and control layers.
 
 **For**
 
 - Clear map / visualization product
-- Complements assets and dynasties already in scope
-- Public curiosity about “where the rich really live / pay tax”
+- Public debate already exists around corporate tax and offshoring
+- Complements control-chain and brand-ownership use cases
 
 **Against**
 
-- Abstract on Instagram without a strong visual story
+- Abstract without a strong named story
 - Jurisdiction nuance is easy to get wrong
-- Less of a roster product; harder to “collect” like people
+- Less of a “collect people” product
 
 ---
 
 ## Closest next bets for this repo
 
-1. **Ultra-private assets** — highest Instagram hook; inverts person → asset
-2. **Dynastic wealth** — high Instagram pull plus best schema reuse
+1. **Media & narrative control** — high public pull; fits planned influence enrichment
+2. **Who owns what you use** — everyday recognition; reuses ownership joins without a luxury frame
