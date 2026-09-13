@@ -1,0 +1,437 @@
+# Lovelace view: "Lüftungen" – all Ambientika ventilators (control + status)
+#
+# This file is a single VIEW OBJECT (it starts with `title:`, no leading `-`).
+#
+# HOW TO ADD (recommended – per-view YAML editor):
+#   1. Dashboard -> top-right 3-dot menu -> "Edit dashboard".
+#   2. Click the "+" tab to add a new view -> pick any type -> save the empty view.
+#   3. Open that view's settings (pencil) -> 3-dot menu -> "Edit in YAML".
+#   4. Select all, delete, and paste this whole file. Save.
+#
+# ALTERNATIVE (Raw configuration editor = the WHOLE dashboard):
+#   The raw editor holds one big object with a top-level `views:` list.
+#   Do NOT replace everything with this file. Instead add it as a list item:
+#   indent every line of this file by 4 spaces and prefix the first line with
+#   "  - " so it nests under `views:`. The per-view editor above avoids this.
+#
+title: Lüftungen
+path: lueftungen
+icon: mdi:air-filter
+cards:
+  - type: markdown
+    content: >
+      ## Lüftungen (Ambientika)
+
+      Steuerung & Status aller Lüfter. Tippe auf einen Lüfter für alle Regler
+      (Lüfterstufe, Modus, Ziel-Luftfeuchte).
+
+  # ---------- Übersicht (alle 7 auf einen Blick) ----------
+  - type: horizontal-stack
+    cards:
+      - type: entities
+        title: Lüfterstufen
+        entities:
+          - type: attribute
+            entity: climate.kuche
+            attribute: fan_mode
+            name: Küche
+          - type: attribute
+            entity: climate.sofa_2
+            attribute: fan_mode
+            name: Sofa
+          - type: attribute
+            entity: climate.buro_eg
+            attribute: fan_mode
+            name: Büro EG
+          - type: attribute
+            entity: climate.bad_og
+            attribute: fan_mode
+            name: Bad OG
+          - type: attribute
+            entity: climate.buro_og
+            attribute: fan_mode
+            name: Büro OG
+          - type: attribute
+            entity: climate.ankleide_og
+            attribute: fan_mode
+            name: Ankleide OG
+          - type: attribute
+            entity: climate.schlafzimmer_og
+            attribute: fan_mode
+            name: Schlafzimmer OG
+      - type: glance
+        title: Filterstatus
+        show_state: true
+        columns: 2
+        entities:
+          - entity: sensor.kuche_filter_status
+            name: Küche
+          - entity: sensor.sofa_filter_status_2
+            name: Sofa
+          - entity: sensor.buro_eg_filter_status
+            name: Büro EG
+          - entity: sensor.bad_og_filter_status
+            name: Bad OG
+          - entity: sensor.buro_og_filter_status
+            name: Büro OG
+          - entity: sensor.ankleide_og_filter_status
+            name: Ankleide OG
+          - entity: sensor.schlafzimmer_og_filter_status
+            name: Schlafzimmer OG
+
+  # ---------- Alle Lüfter gleichzeitig steuern ----------
+  - type: markdown
+    content: "### Alle Lüfter gleichzeitig"
+  - type: horizontal-stack
+    cards:
+      - type: button
+        name: An (alle)
+        icon: mdi:fan
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_hvac_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            hvac_mode: fan_only
+      - type: button
+        name: Aus (alle)
+        icon: mdi:fan-off
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_hvac_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            hvac_mode: "off"
+  - type: horizontal-stack
+    cards:
+      - type: button
+        name: Alle Auto
+        icon: mdi:fan-auto
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_preset_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            preset_mode: Auto
+      - type: button
+        name: Alle Smart
+        icon: mdi:brain
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_preset_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            preset_mode: Smart
+      - type: button
+        name: Alle Nacht
+        icon: mdi:weather-night
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_preset_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            preset_mode: Night
+  - type: horizontal-stack
+    cards:
+      - type: button
+        name: Alle Low
+        icon: mdi:fan-speed-1
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_fan_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            fan_mode: low
+      - type: button
+        name: Alle Medium
+        icon: mdi:fan-speed-2
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_fan_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            fan_mode: medium
+      - type: button
+        name: Alle High
+        icon: mdi:fan-speed-3
+        tap_action:
+          action: perform-action
+          perform_action: climate.set_fan_mode
+          target:
+            entity_id:
+              - climate.kuche
+              - climate.sofa_2
+              - climate.buro_eg
+              - climate.bad_og
+              - climate.buro_og
+              - climate.ankleide_og
+              - climate.schlafzimmer_og
+          data:
+            fan_mode: high
+
+  # ---------- Lüftungs-Automationen ----------
+  - type: entities
+    title: Lüftungs-Automationen
+    show_header_toggle: false
+    entities:
+      - entity: automation.erdgeschoss_luften
+        name: Erdgeschoss Lüften
+      - entity: automation.erdgeschoss_leise
+        name: Erdgeschoss Leise
+      - entity: automation.erdgeschoss_arbeiten
+        name: Erdgeschoss Arbeiten
+      - entity: automation.eg_luften_sommer
+        name: EG Lüften Sommer
+      - entity: automation.erdgeschoss_turn_off
+        name: Erdgeschoss Aus
+      - entity: automation.obergeschoss_luften
+        name: Obergeschoss Lüften
+      - entity: automation.bed_time_turn_off
+        name: Obergeschoss Aus
+      - entity: automation.virtuelle_gruppe_ein
+        name: Virtuelle EG Lüftung Ein
+      - entity: automation.virtuelle_eg_luftung_aus
+        name: Virtuelle EG Lüftung Aus
+      - entity: automation.haus_betreten_luftung_eg_aus
+        name: Haus betreten – Lüftung EG aus
+      - entity: automation.luftfeuchtigkeit_bad_60
+        name: Luftfeuchtigkeit Bad > 60%
+
+  # ---------- Erdgeschoss ----------
+  - type: markdown
+    content: "### Erdgeschoss"
+
+  - type: vertical-stack
+    cards:
+      - type: tile
+        entity: climate.kuche
+        name: Küche
+        features:
+          - type: climate-hvac-modes
+            hvac_modes: ["off", "fan_only"]
+          - type: climate-preset-modes
+            style: dropdown
+      - type: entities
+        entities:
+          - entity: climate.kuche
+            name: Regler (Stufe / Modus / Feuchte)
+          - entity: sensor.kuche_luftqualitat
+            name: Luftqualität
+          - entity: sensor.kuche_filter_status
+            name: Filter
+          - entity: binary_sensor.kuche_luftfeuchte_alarm
+            name: Feuchte-Alarm
+          - entity: binary_sensor.kuche_nacht_alarm
+            name: Nacht-Alarm
+          - entity: button.kuche_none
+            name: Filter zurücksetzen
+
+  - type: vertical-stack
+    cards:
+      - type: tile
+        entity: climate.sofa_2
+        name: Sofa
+        features:
+          - type: climate-hvac-modes
+            hvac_modes: ["off", "fan_only"]
+          - type: climate-preset-modes
+            style: dropdown
+      - type: entities
+        entities:
+          - entity: climate.sofa_2
+            name: Regler (Stufe / Modus / Feuchte)
+          - entity: sensor.sofa_luftqualitat_2
+            name: Luftqualität
+          - entity: sensor.sofa_filter_status_2
+            name: Filter
+          - entity: binary_sensor.sofa_luftfeuchte_alarm
+            name: Feuchte-Alarm
+          - entity: binary_sensor.sofa_nacht_alarm
+            name: Nacht-Alarm
+          - entity: button.sofa_none
+            name: Filter zurücksetzen
+
+  - type: vertical-stack
+    cards:
+      - type: tile
+        entity: climate.buro_eg
+        name: Büro EG
+        features:
+          - type: climate-hvac-modes
+            hvac_modes: ["off", "fan_only"]
+          - type: climate-preset-modes
+            style: dropdown
+      - type: entities
+        entities:
+          - entity: climate.buro_eg
+            name: Regler (Stufe / Modus / Feuchte)
+          - entity: sensor.buro_eg_luftqualitat
+            name: Luftqualität
+          - entity: sensor.buro_eg_filter_status
+            name: Filter
+          - entity: binary_sensor.buro_eg_luftfeuchte_alarm
+            name: Feuchte-Alarm
+          - entity: binary_sensor.buro_eg_nacht_alarm
+            name: Nacht-Alarm
+          - entity: button.buro_eg_none
+            name: Filter zurücksetzen
+
+  # ---------- Obergeschoss ----------
+  - type: markdown
+    content: "### Obergeschoss"
+
+  - type: vertical-stack
+    cards:
+      - type: tile
+        entity: climate.bad_og
+        name: Bad OG
+        features:
+          - type: climate-hvac-modes
+            hvac_modes: ["off", "fan_only"]
+          - type: climate-preset-modes
+            style: dropdown
+      - type: entities
+        entities:
+          - entity: climate.bad_og
+            name: Regler (Stufe / Modus / Feuchte)
+          - entity: sensor.bad_og_luftqualitat
+            name: Luftqualität
+          - entity: sensor.bad_og_filter_status
+            name: Filter
+          - entity: binary_sensor.bad_og_luftfeuchte_alarm
+            name: Feuchte-Alarm
+          - entity: binary_sensor.bad_og_nacht_alarm
+            name: Nacht-Alarm
+          - entity: button.bad_og_none
+            name: Filter zurücksetzen
+
+  - type: vertical-stack
+    cards:
+      - type: tile
+        entity: climate.buro_og
+        name: Büro OG
+        features:
+          - type: climate-hvac-modes
+            hvac_modes: ["off", "fan_only"]
+          - type: climate-preset-modes
+            style: dropdown
+      - type: entities
+        entities:
+          - entity: climate.buro_og
+            name: Regler (Stufe / Modus / Feuchte)
+          - entity: sensor.buro_og_luftqualitat
+            name: Luftqualität
+          - entity: sensor.buro_og_filter_status
+            name: Filter
+          - entity: binary_sensor.buro_og_luftfeuchte_alarm
+            name: Feuchte-Alarm
+          - entity: binary_sensor.buro_og_nacht_alarm
+            name: Nacht-Alarm
+          - entity: button.buro_og_none
+            name: Filter zurücksetzen
+
+  - type: vertical-stack
+    cards:
+      - type: tile
+        entity: climate.ankleide_og
+        name: Ankleide OG
+        features:
+          - type: climate-hvac-modes
+            hvac_modes: ["off", "fan_only"]
+          - type: climate-preset-modes
+            style: dropdown
+      - type: entities
+        entities:
+          - entity: climate.ankleide_og
+            name: Regler (Stufe / Modus / Feuchte)
+          - entity: sensor.ankleide_og_luftqualitat
+            name: Luftqualität
+          - entity: sensor.ankleide_og_filter_status
+            name: Filter
+          - entity: binary_sensor.ankleide_og_luftfeuchte_alarm
+            name: Feuchte-Alarm
+          - entity: binary_sensor.ankleide_og_nacht_alarm
+            name: Nacht-Alarm
+          - entity: button.ankleide_og_none
+            name: Filter zurücksetzen
+
+  - type: vertical-stack
+    cards:
+      - type: tile
+        entity: climate.schlafzimmer_og
+        name: Schlafzimmer OG
+        features:
+          - type: climate-hvac-modes
+            hvac_modes: ["off", "fan_only"]
+          - type: climate-preset-modes
+            style: dropdown
+      - type: entities
+        entities:
+          - entity: climate.schlafzimmer_og
+            name: Regler (Stufe / Modus / Feuchte)
+          - entity: sensor.schlafzimmer_og_luftqualitat
+            name: Luftqualität
+          - entity: sensor.schlafzimmer_og_filter_status
+            name: Filter
+          - entity: binary_sensor.schlafzimmer_og_luftfeuchte_alarm
+            name: Feuchte-Alarm
+          - entity: binary_sensor.schlafzimmer_og_nacht_alarm
+            name: Nacht-Alarm
+          - entity: button.schlafzimmer_og_none
+            name: Filter zurücksetzen

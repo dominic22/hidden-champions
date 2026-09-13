@@ -1,0 +1,34 @@
+{
+  "name": "shs-smart-home-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SHS – Smart Home Services company website",
+  "author": "SHS Smart Home Services",
+  "keywords": [
+    "gatsby",
+    "heroui",
+    "tailwind",
+    "smart-home"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@heroui/react": "^2.6.14",
+    "framer-motion": "^11.11.17",
+    "gatsby": "^5.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "gatsby-plugin-postcss": "^6.14.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}

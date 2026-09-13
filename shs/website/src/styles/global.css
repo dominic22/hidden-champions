@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-terracotta-900 font-sans antialiased;
+}
+
+/* Subtle warm grain-free gradient used across hero + section dividers */
+.bg-warm-gradient {
+  background: linear-gradient(135deg, #fbf3ec 0%, #f7d8c4 55%, #f3b49b 100%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
