@@ -8,7 +8,7 @@ Produkte: Philips Hue oder IKEA Dirigera.
 
 Ziel: Der unkomplizierte Einstieg für Beleuchtung und einfache Automationen. Keine Installation, sofort betriebsbereit.
 
-Advanced-Modell (Die lokale Smart-Home-Zentrale):
+Advanced-Modell (Die Smart-Home-Zentrale):
 
 Produkte: Home Assistant (Mini-PC) oder Homey Pro als Zentrale, kombiniert mit flexiblen Funkkomponenten (Zigbee/Matter, z.B. tado Heizungsthermo-state, Aqara Sensoren, smarte Steckdosen).
 

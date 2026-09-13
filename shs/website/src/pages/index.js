@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import SiteNavbar from "../components/SiteNavbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import CostComparison from "../components/CostComparison";
 import Process from "../components/Process";
 import About from "../components/About";
 import Faq from "../components/Faq";
@@ -15,6 +16,7 @@ export default function IndexPage() {
       <SiteNavbar />
       <Hero />
       <Services />
+      <CostComparison />
       <Process />
       <About />
       <Faq />

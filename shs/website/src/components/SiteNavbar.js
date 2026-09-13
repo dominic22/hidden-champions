@@ -14,6 +14,7 @@ import { LuHouse } from "react-icons/lu";
 
 const navLinks = [
   { label: "Leistungen", href: "#leistungen" },
+  { label: "Kosten", href: "#kosten" },
   { label: "Ablauf", href: "#ablauf" },
   { label: "Über uns", href: "#ueber-uns" },
   { label: "FAQ", href: "#faq" },

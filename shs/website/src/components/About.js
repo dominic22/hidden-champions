@@ -1,6 +1,6 @@
 import React from "react";
 import { Chip } from "@heroui/react";
-import { LuHeart, LuUsers, LuHandshake } from "react-icons/lu";
+import { LuHeart, LuUsers, LuShieldCheck } from "react-icons/lu";
 
 const values = [
   {
@@ -14,9 +14,9 @@ const values = [
     text: "Wir sind keinem Hersteller verpflichtet und empfehlen genau das, was zu Ihnen passt.",
   },
   {
-    icon: LuHandshake,
-    title: "Mit starken Partnern",
-    text: "Für die 230V-Installation arbeiten wir mit einem qualifizierten Partner-Elektriker zusammen.",
+    icon: LuShieldCheck,
+    title: "Fachgerecht & sicher",
+    text: "Die feste 230V-Installation wird ausschließlich von einer qualifizierten Elektrofachkraft ausgeführt.",
   },
 ];
 

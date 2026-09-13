@@ -52,7 +52,7 @@ export default function Services() {
                   size="sm"
                   className="absolute -top-3 left-1/2 -translate-x-1/2 bg-terracotta-500 font-medium text-white"
                 >
-                  Am beliebtesten
+                  Empfehlung
                 </Chip>
               )}
               <CardHeader className="flex flex-col items-start gap-3 pb-0">
@@ -89,7 +89,9 @@ export default function Services() {
                       key={product}
                       size="sm"
                       variant="flat"
-                      startContent={<LuBox aria-hidden className="h-3.5 w-3.5" />}
+                      startContent={
+                        <LuBox aria-hidden className="h-3.5 w-3.5" />
+                      }
                       className="bg-terracotta-50 text-terracotta-700"
                     >
                       {product}

@@ -10,12 +10,12 @@ const badges = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative flex min-h-[calc(100vh-64px)] items-center overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-warm-gradient opacity-70" />
       <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-peach/60 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-32 left-1/4 h-72 w-72 rounded-full bg-butter/50 blur-3xl" />
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:py-28">
+      <div className="relative mx-auto grid w-full max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:py-28">
         <div className="flex flex-col justify-center">
           <Chip
             variant="flat"
@@ -31,7 +31,7 @@ export default function Hero() {
           <p className="mt-6 max-w-md text-lg leading-relaxed text-terracotta-800/80">
             Wir beraten Sie bei der Produktauswahl und übernehmen die
             Integration vor Ort – vom unkomplizierten Einstieg bis zur festen
-            Elektro-Installation mit Partner-Elektriker.
+            Elektro-Installation.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

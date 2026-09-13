@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Wer übernimmt die Installation an der 230V-Netzspannung?",
-    a: "Beim Pro-Modell übernimmt unser Partner-Elektriker die fachgerechte Montage und den Anschluss an das Stromnetz. Wir richten das System anschließend ein und übergeben es Ihnen.",
+    a: "Beim Pro-Modell wird die fachgerechte Montage und der Anschluss an das Stromnetz von einer qualifizierten Elektrofachkraft ausgeführt. Wir richten das System anschließend ein und übergeben es Ihnen.",
   },
   {
     q: "Läuft mein Smart Home auch ohne Cloud?",

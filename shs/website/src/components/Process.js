@@ -21,7 +21,7 @@ const steps = [
   {
     icon: LuWrench,
     title: "Integration vor Ort",
-    text: "Wir richten alles ein. Für die feste Installation kommt unser Partner-Elektriker.",
+    text: "Wir richten alles ein. Die feste 230V-Installation übernimmt eine qualifizierte Elektrofachkraft.",
   },
   {
     icon: LuKeyRound,
